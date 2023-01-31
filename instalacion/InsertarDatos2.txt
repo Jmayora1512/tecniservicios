@@ -1,0 +1,122 @@
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+
+INSERT INTO `categoria` 
+(`idCategoria`, 
+`Nombre_Categoria`) 
+VALUES
+
+(1, 'Cercos'),
+
+(2, 'Television'),
+
+(3, 'Computacion');
+
+
+
+--
+-- Volcado de datos para la tabla `estados`
+--
+
+
+INSERT INTO `estados` (`idEstados`, `Nombre_Estado`) VALUES
+
+(1, 'Amazonas'),
+
+(2, 'Anzoategui'),
+
+(3, 'Apure'),
+
+(4, 'Aragua'),
+
+(5, 'Barinas'),
+
+(6, 'Bolivar'),
+
+(7, 'Carabobo'),
+
+(8, 'Cojedes'),
+
+(9, 'Delta Amacuro'),
+
+(10, 'Distrito Capital'),
+
+(11, 'Falcon'),
+
+(12, 'Guarico'),
+
+(13, 'Lara'),
+
+(14, 'Merida'),
+
+(15, 'Miranda'),
+
+(16, 'Monagas'),
+
+(17, 'Nueva Esparta'),
+
+(18, 'Portuguesa'),
+
+(19, 'Sucre'),
+
+(20, 'Tachira'),
+
+(21, 'Trujillo'),
+
+(22, 'Vargas'),
+
+(23, 'Yaracuy'),
+
+(24, 'Zulia');
+
+
+
+--
+-- Volcado de datos para la tabla `nivel_usuario`
+--
+
+
+INSERT INTO `nivel_usuario` 
+(`idNivel_Usuario`, `Descripcion_Nivel`) VALUES
+
+(1, 'Gerente'),
+(2, 'Vendedor');
+
+
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+
+INSERT INTO `productos` 
+(`idProductos`, `Imagen`, `Codigo`, `Nombre`, `Descripcion_Productos`, `Precio_Costo`, `Precio_Venta`, `Stock`, `Fecha_Creado`, `Categoria_idCategoria`) VALUES
+
+(1, 'imagenes/Cerco/AIS100.jpg', 'AIS100', 'Aislante de Paso', 'Aislador intermedio con remache', 10.26, 15.39, 100, '2015-01-02', 1),
+
+(2, 'imagenes/Cerco/AIS200.jpg', 'AIS200', 'Aislante Tensor', 'Aislador final o esquinero para tensar', 15.66, 23.49, 100, '2015-01-02', 1),
+
+(3, 'imagenes/Cerco/AIS300.jpg', 'AIS300', 'Aislante Intermedio', 'Aislador  intermedio con perno, arandela y tu', 19.44, 29.16, 100, '2015-01-02', 1),
+
+(4, 'imagenes/Cerco/AIS400.jpg', 'AIS400', 'Aislante Final', 'Aislador  final con perno, arandela y tuerca', 37.13, 55.69, 100, '2015-01-02', 1),
+
+(5, 'imagenes/Cerco/BOBI001.jpg', 'BOBI001', 'Bobina', 'Bobina de alambre con 150 mts Calibre 2 mm', 996.3, 1494.45, 100, '2015-01-02', 1),
+
+(6, 'imagenes/Cerco/BOBI002.jpg', 'BOBI002', 'Bobina', 'Bobina de alambre con 2.000 mts Calibre 2 mm', 12555, 18832.5, 100, '2015-01-02', 1);
+
+
+
+--
+-- Volcado de datos para la tabla `usuario`
+
+--
+
+INSERT INTO `usuario` (`Cedula_Usuario`, `Nombre_Usuario`, `Apellido_Usuario`, `Login`, `Clave`, `Correo_Usuario`, `Telefono_Usuario`, `Celular_Usuario`, `Fecha_Usuario`, `Direccion_Usuario`, `Nivel_Usuario_idNivel_Usuario`, `Estados_idEstados`) VALUES
+
+(7996633, 'Jorge', 'Mayora', 'Jmayora', 'LaGuaira01', 'jorgemayora@hotmail.com', '02129559883', '04129785018', '2014-12-31', 'Vereda 12, Casa 1205, Catia la Mar', 1, 22);
+
+
+
+INSERT INTO `inventario`.`forma_pago` (`idForma_Pago`, `Nombre_Forma_Pago`) VALUES (NULL, 'Efectivo'), (NULL, 'Cheque'),(NULL, 'Tarjeta de Debito'), (NULL, 'Tarjeta de Credito');

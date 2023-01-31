@@ -1,0 +1,27 @@
+body{
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+/*media queries para hero-unit h1 480px*/
+
+@media all and (max-width: 480px){
+	.hero-unit h1{
+		font-size: 25px;
+		padding-bottom: 15px;
+	}
+}
+
+a{
+	font-size: 2em;
+	font-family: Arial, Helvatica, sans-serif;
+	text-align: center;
+}
+
+/*
+div {
+	width: 1200;
+	height: 600;
+	float: center; 
+	padding: 1px
+}*/
